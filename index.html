@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="stylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="title-color">Flex vs Grid</h1>
+    <h4 class="title-color">first of all !</h4>
+    <p class="text-font-size">
+      we want, as much as we can to go in the "happy" path (the path with least
+      resistance) we're not trying to fight against thing that we're using so
+      much
+    </p>
+
+    <h3 class="title-color">Flexbox</h3>
+    <div id="flexbox-container" class="container">
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <p>Lorem, ipsum dolor.</p>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <h4 class="title-color">flexbox cheat-sheet</h4>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">display: flex</em> > set the display to flex (every
+      direct child will become a column even if there is overflow)
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap"
+        >link</a
+      >
+    </p>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">flex-wrap: ...</em> > sets whether flex items are
+      forced onto one line or can wrap onto multiple lines.
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+        >link</a
+      >
+    </p>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">align-items: ...</em> > it controls the alignment
+      of items on the Cross Axis.
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"
+        >link</a
+      >
+    </p>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">justify-content: ...</em> > defines how the browser
+      distributes space between and around content items along the main-axis of
+      a flex container.
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+        >link</a
+      >
+    </p>
+    <h4 class="ups&downs-title title-color">ups- and downs of flexbox</h4>
+    <ul class="ups&downs-container">
+      <li class="ups&downs-li text-font-size">
+        felxbox is realy good at intrinsic sizing (the size it would be based on
+        its content, if no external factors were applied to it.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Glossary/Intrinsic_Size"
+          >link</a
+        >)
+      </li>
+    </ul>
+
+    <h3 class="title-color">Grid</h3>
+    <div id="grid-container" class="container">
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <p>Lorem, ipsum dolor.</p>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <! --  -->
+    <div id="test">
+      exemple of 300px for <br />
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    </div>
+
+    <h4 class="title-color">Grid cheat-sheet</h4>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">display: grid</em> > set the display to grid (every
+      direct child will stay a row)
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+        >link</a
+      >
+    </p>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">grid-auto-flow: ... </em> > change the behavior of
+      the grid (row/column)
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow"
+        >link</a
+      >
+    </p>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">grid-template-row: ... </em> > defines the line
+      names and track sizing functions of the grid columns.
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
+        >link</a
+      >
+    </p>
+    <p>
+      <em class="exemple"> grid-template-row: 1fr 1fr 1fr 1fr</em> (create 4
+      colums of the same lenght)
+    </p>
+    <p>
+      <em class="exemple"> grid-template-row: repeat(4, 1fr)</em> (create 4
+      colums of the same lenght)
+    </p>
+    <p>
+      <em class="exemple">
+        grid-template-columns: reapeat(auto-fit, minmax(300px,1fr))</em
+      >
+      (create colums of min 300px of lenght and keep all the columns they can
+      feet at the same lenght )
+    </p>
+    <p class="properties-and-explanation text-font-size">
+      <em class="properties">grid-template-rows: ... </em> > defines the line
+      names and track sizing functions of the grid rows.
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
+        >link</a
+      >
+    </p>
+    <h4 class="ups&downs-title title-color">ups- and downs of Grid</h4>
+    <ul class="ups&downs-container">
+      <li class="ups&downs-li text-font-size">
+        for structured layout grid is a much better solution
+      </li>
+    </ul>
+  </body>
+</html>

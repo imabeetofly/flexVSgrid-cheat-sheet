@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  background-color: rgb(233, 242, 250);
+}
+
+/* used as variable */
+
+.text-font-size {
+  font-size: 1.2em;
+}
+
+.title-color {
+  color: orange;
+  text-shadow: 1px 1px black;
+}
+
+
+/* all the title */
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 50px 0 20px 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 50px 0 20px 0;
+}
+
+/* cheat-sheet  */
+
+.properties-and-explanation {
+  margin: 5px 0;
+}
+
+.properties {
+  color: red;
+}
+
+.exemple {
+  color: green;
+  margin-left: 20px;
+}
+
+/* ups and downs */
+
+.upsAdowns-title {
+}
+.upsAdowns-container {
+}
+.upsAdowns-li {
+}
+
+/* both container for demonstration */
+
+.container {
+  font-size: 1.5rem;
+}
+
+.container p {
+  border: 2px solid;
+}
+
+/* flex-container for demonstration */
+
+#flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flexbox-container > * {
+  /* flex-grow: 1; */
+  /* flex-basis: 33%; */
+}
+
+/* grid-container for demonstration */
+
+#grid-container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#grid-container > * {
+  text-align: center;
+}
+
+#test {
+  width: 300px;
+  border: 1px solid;
+  margin-top: 40px;
+}
